@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Consulta de Cidades por Estado</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Consulta de Cidades por Estado</h2>
+    <div class="form-group">
+      <label for="estado">UF do estado:</label>
+      <input type="text" id="estado" name="estado" placeholder="Ex: SP" required>
+    </div>
+    <button class="btn-submit" onclick="consultarCidades()">CONSULTAR</button>
+    <h3>NOME DE TODAS AS CIDADES DO ESTADO SOLICITADO:</h3>
+    <div class="result">
+      
+      <ul id="cidades"></ul>
+    </div>
+    <p id="error-msg" class="error" style="display: none;"></p>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
